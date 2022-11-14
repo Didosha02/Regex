@@ -1,0 +1,27 @@
+# Letters only 
+# import re
+# s = '(@&#)]%4D|@56i![0{2d>o1&42$s%^*#h**&&#%^!a'
+# result = re.findall('[a-zA-Z]', s)
+# print (''.join(result))
+
+
+#Калькулятор
+# class Calculator:
+#     def __init__(self, x,y):
+#         self.x = x
+#         self.y = y
+    
+#     def addition(self):
+#         return self.x + self.y
+#     def subtraction(self):
+#         return self.x - self.y
+#     def multiplication(self):
+#         return self.x*self.y
+#     def division(self):
+#         return self.x//self.y
+
+# calc = Calculator(200,10)
+# print("Плюсуем = ", calc.addition())
+# print("Минусуем = ", calc.subtraction())
+# print("Умножение = ", calc.multiplication())
+# print("Деление = ", calc.division())
