@@ -26,3 +26,37 @@
 # s = '(@&#)]%4D|@56i![0{2d>o1&42$s%^*#h**&&#%^!a'
 # result = re.findall('[a-zA-Z]', s)
 # print (''.join(result))
+
+
+# import math
+
+# class circle():
+#     def __init__(self, radius):
+#         self.radius = radius
+#     def area(self):
+#         return math.pi * (self.radius**2)
+#     def perimeter(self):
+#         return 2 * math.pi * self.radius
+ 
+# r = int(input("Радиус круга: "))
+# circ = circle(r)
+# print("Площадь:", round(circ.area(), 2))
+# print("Периметр:", round(circ.perimeter(), 2))
+
+
+# class Employee:
+#     def __init__(self, first_name, last_name):
+#         self.first_name = first_name
+#         self.last_name = last_name
+
+#     @property
+#     def fullname(self):
+#         return "{} {}".format(self.first_name, self.last_name)
+
+#     @property
+#     def email(self):
+#         return "{} {}@gmail.com".format(self.first_name, self.last_name)
+
+# FIO = Employee("Didar", "Abdykarim")
+# print(FIO.fullname)
+# print(FIO.email)
