@@ -60,3 +60,9 @@
 # FIO = Employee("Didar", "Abdykarim")
 # print(FIO.fullname)
 # print(FIO.email)
+
+
+import re
+text = 'Didar kdjgsdhjwkjgwjgmw best'
+result = re.search(r"Didar(.*?)best", text).group(1)
+print (result)
