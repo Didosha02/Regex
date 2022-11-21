@@ -66,3 +66,79 @@ import re
 text = 'Didar kdjgsdhjwkjgwjgmw best'
 result = re.search(r"Didar(.*?)best", text).group(1)
 print (result)
+
+
+
+
+
+Алдынгы сабактын есептеры
+1)
+import re
+ 
+ssylka = 'C:/Users/johnsmith/Music/Beethoven_5.mp3'
+ 
+result = re.search(r'[\w-]+?(?=\.)', ssylka).group()
+ 
+print(result)
+
+2)
+def file_read(student_name_file):
+    file = open(student_name_file, 'r')
+    print(file.read())
+    file.close()
+
+student_name_file="didosha.txt"
+file_read(student_name_file)
+
+
+3)
+def file_read(student_name_file):
+        result =[x.strip() for x in student_name_file]
+
+        return result
+
+
+with open('didosha.txt','r') as result:
+        list_of_student_names=result.readlines()
+        print(file_read(list_of_student_names))
+
+
+4)
+def file_write(fullname_list_students):
+    with open('didosha02.txt','w') as full:
+        for ful in fullname_list_students:
+            full.write(ful+'\n')
+    with open('didosha02.txt','r') as full:
+        print(full.read())
+
+fullname_list_students = [
+'Didar Abdykarim',
+'Ayala Nurkuatkyzy',
+'Erkebulan Alkhodja',
+'Rauan Sultanov',
+'Bakyt Kantaeva'
+]
+
+
+file_write(fullname_list_students)
+
+
+
+
+
+Бугнгы есептер
+
+def format_date(data):
+    new_data=data.split("/")
+    return "{}{}{}".format(new_data[-1],new_data[1],new_data[0])
+
+print(format_date("01/31/2022"))
+
+
+import datetime
+d = datetime.date(2022, 11, 22) 
+print(d)
+
+
+
+
